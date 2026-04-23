@@ -7,20 +7,48 @@
   </head>
   <body>
     <header>
-      <nav class="navbar" id="navbar1" >
+      <nav class="navbar" id="navbar1">
         <div>
-            <h1>CodeAcademy</h1>
+          <h1>CodeAcademy</h1>
         </div>
         <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">Contact</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Google</a></li>
+          <li><a href="">Home</a></li>
+          <li><a href="">Contact</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Google</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <form id="contactForm"></form>
+      <form id="contactForm">
+        <label for="name">Name: </label>
+        <input id="name" type="text" placeholder="Add your name..." />
+        <br />
+        <label for="email">Email: </label>
+        <input id="email" type="email" />
+        <br />
+        <label for="password">Password: </label>
+        <input id="password" name="password" type="password" />
+        <br />
+        <label for="newsletter"
+          ><input type="checkbox" name="subscribe" value="newsletter" /> subscribe to Newsletter</label
+        >
+        <label for="updates"><input type="checkbox" name="subscribe" value="updates" />subscribe to updates</label>
+        <br />
+        <label for="choiceYes"> <input id="choiceYes" type="radio" name="choice" value="yes" />Yes</label>
+        <label for="choiceNo"> <input id="choiceNo" type="radio" name="choice" value="no" /> No</label>
+        <br />
+        <input type="range" />
+        <input type="date" />
+        <br />
+        <select name="course" id="course-selected">
+          <option value="">--Please choose a course</option>
+          <option value="">Software Develompent</option>
+          <option value="">Data Science</option>
+          <option value="">AI for Business</option>
+        </select>
+        <button type="submit">send</button>
+      </form>
     </main>
     <footer></footer>
   </body>
