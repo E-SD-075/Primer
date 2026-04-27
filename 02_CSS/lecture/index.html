@@ -4,26 +4,113 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>multi-page</title>
+    <link rel="stylesheet" href="./src/styles/index.css" />
+    <style></style>
   </head>
   <body>
     <header class="header">
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="./src/pages/about.html">About us</a></li>
-          <li><a href="./src/pages/contact.html">Contact</a></li>
+      <nav class="navbar">
+        <div>
+          <h1>Coffee Shop</h1>
+        </div>
+         <ul>
+          <li id="home"><a href="#">Home</a></li>
+          <li id="about"><a href="./src/pages/about.html">About us</a></li>
+          <li id="contact"><a href="./src/pages/contact.html">Contact</a></li>
         </ul>
       </nav>
+       
     </header>
-    <main class="main">
+    <main class="content">
       <h1>Coffee Shop</h1>
       <figure>
         <img src="./src/assets/coffeeMug.jpg" alt="Coffee Mug" width="20%" />
         <figcaption>The best coffee!</figcaption>
       </figure>
+      <section>
+        <h2>Responsive measures</h2>
+         <p>
+            Using relative units like rem, em, viewport units, and percentages can help you create responsive designs that adapt to different screen sizes and user preferences. They allow you to create flexible layouts that look good on a variety of devices, ensuring a better user experience.
+          </p>
+        <section>
+          <h3>Rem and em</h3>
+          <p>
+            Rem and em are relative units in CSS that are used for responsive design. They allow you to create flexible
+            layouts that adapt to different screen sizes and user preferences. The main difference between rem and em is
+            their reference point for sizing elements.
+          </p>
+          <p>
+            Rem (root em) is relative to the root element (usually the <html> element) of the document. For example, if
+            the font size of the root element is set to 16px, then 1rem would be equal to 16px. This means that if you
+            set an element's font size to 2rem, it would be 32px (2 times the root font size).
+          </p>
+          <p>
+            Em, on the other hand, is relative to the font size of the parent element. For example, if a parent element has a font size of 20px, 
+            then 1em would be equal to 20px. If you set a child element's font size to 1.5em, it would be 30px (1.5 times the parent font size).
+          </p>
+        </section>
+        <section>
+          <h3>Viewport units</h3>
+          <p>
+            Viewport units (vw, vh, vmin, vmax) are relative to the size of the viewport (the visible area of the web page). They allow you to create
+            responsive designs that adapt to different screen sizes without relying on a specific font size. For example, 1vw is equal to 1% of the viewport width, and 1vh is equal to 1% of the viewport height. This means that if you set an element's width to 50vw, it would be 50% of the viewport width.
+          </p>
+          <p>
+            Viewport units are particularly useful for creating full-screen layouts, responsive typography, and elements that scale based on the size of the viewport. They can help ensure that your design looks good on a variety of devices and screen sizes.
+          </p>
+        </section>
+        <section>
+          <h3>Percentages</h3>
+          <p>
+            Percentages are relative to the size of the parent element. They allow you to create flexible layouts that adapt to different screen sizes and user preferences. For example, if a parent element has a width of 500px, and you set a child element's width to 50%, it would be 250px (50% of the parent width). Percentages can be used for various properties such as width, height, padding, margin, and font size, making them a versatile tool for responsive design.
+          </p>
+        </section>
+        <section>
+          <h2>Flexbox and Grid</h2>
+          <p>
+            Flexbox and Grid are powerful layout systems in CSS that allow you to create responsive designs with ease. They provide a flexible way to arrange and align elements on a web page, making it easier to create complex layouts that adapt to different screen sizes and user preferences.
+          </p>
+          <section>
+            <h3>Flexbox</h3>
+            <p>
+              Flexbox is a one-dimensional layout system that allows you to arrange elements in a row or column. It provides powerful alignment and distribution capabilities, making it easier to create complex layouts that adapt to different screen sizes.
+            </p>
+          </section>
+          <section>
+            <h3>Grid</h3>
+            <p>
+              Grid is a two-dimensional layout system that allows you to create complex layouts with rows and columns. It provides precise control over the placement and alignment of elements, making it ideal for creating responsive designs that adapt to various screen sizes.
+            </p>
+          </section>
+        </section>
+       <section>
+          <h2>Media Queries</h2>
+          <p>
+            Media queries are a powerful tool in CSS that allow you to apply different styles based on the characteristics of the device or viewport. They enable you to create responsive designs that adapt to various screen sizes, orientations, and resolutions. By using media queries, you can ensure that your website looks good and functions well on a wide range of devices, from mobile phones to desktop computers.
+          </p>
+          <p>
+            Media queries are commonly used to adjust layouts, font sizes, and other design elements to provide an optimal viewing experience on different devices. They are an essential part of modern responsive web design.
+          </p>
+          <p>
+            In summary, using relative units like rem, em, viewport units, and percentages, along with layout systems like Flexbox and Grid, and media queries, can help you create responsive designs that adapt to different screen sizes and user preferences. These tools allow you to create flexible layouts that look good on a variety of devices, ensuring a better user experience.
+          </p>
+          <section>
+            <h3>Media queries bounds</h3>
+            <p>
+              Media queries can be set to target specific screen sizes, orientations, and resolutions. Common breakpoints for responsive design include:
+              <ul>
+                <li>Small devices (mobile phones): max-width: 600px</li>
+                <li>Medium devices (tablets): min-width: 601px and max-width: 1024px</li>
+                <li>Large devices (desktops): min-width: 1025px</li>
+              </ul>
+              These breakpoints can be adjusted based on the specific needs of your design and the target audience. By using media queries with appropriate breakpoints, you can ensure that your website looks good and functions well on a wide range of devices, providing an optimal viewing experience for all users.
+            </p>
+          </section>
+       </section>
+      </section>
     </main>
     <footer class="footer">
-        <p>Copyright 2026</p>
+      <p>Copyright 2026</p>
     </footer>
   </body>
 </html>
