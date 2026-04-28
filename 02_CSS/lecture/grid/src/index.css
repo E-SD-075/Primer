@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #ffcc5c;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+main {
+    padding: 2rem;
+    min-height: 90vh;
+}
+
+section {
+    margin-bottom: 1rem;
+}
+section h2 {
+    font-size: 1.1rem;
+    padding-bottom: 0.3em;
+}
+
+section p {
+    line-height: 1.4;
+}
+
+section ul {
+    margin-left: 2rem;
+}
+section ul li {
+    line-height: 1.6;
+}
+
+#dog-gallery figure > div > img {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+}
+
+#dog-gallery figure > div {
+    width: 5rem;
+    height: 5rem;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.1rem 0.3rem rgba(255, 255, 255, 0.2);
+}
+
+#dog-gallery figure {
+    color: white;
+
+}
+
+#dog-gallery > div {
+    background-color: #333;
+    border-radius: 0.5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-rows: repeat(2, 15rem); */
+    grid-auto-rows: 7rem;
+    /* grid-template-areas: "dog dog dog"
+    "aside main main"
+    "footer footer sidebar"; */
+    /* align-items: center;
+    justify-items: center; */
+    place-items: center;
+
+}
+
+#dog-gallery #figure1 {
+    /* grid-area: dog; */
+    /* grid-column-start: 1;
+    grid-column-end: 3; */
+    /* grid-column: 1 / span 2; */
+    /* grid-row-start: 1;
+    grid-row-end: 3; */
+    /* grid-row: 1 / span 2; */
+    grid-area: 1 / 1 / span 2 / span 2;
+    justify-self: start;
+    align-self: start;
+}
+#figure2 {
+    /* grid-area: main; */
+     grid-area: 3 / 2 / span 2 / span 2;
+}
+#figure3 {
+    /* grid-area: footer; */
+    grid-area: 5 / 1 / span 2 / span 2;
+}
+#figure4 {
+    /* grid-area: sidebar; */
+}
+#figure5 {
+    /* grid-area: aside; */
+}
+#figure6 {
+    
+}
+#figure7 {
+    
+}
+#figure8 {
+    
+}

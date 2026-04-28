@@ -103,3 +103,37 @@ body {
 }
 
 /* Footer */
+
+@media only screen and (max-width: 1025px) {
+  .header {
+    height: 10rem;
+  }
+  .navbar {
+    height: 10rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+  }
+  .navbar ul {
+    height: 10rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+ @media only screen and (max-width: 600px) {
+  .header {
+    height: 10rem;
+  }
+  .navbar {
+    height: 10rem;
+    align-items: center;
+    justify-content: center;
+  }
+  .navbar ul {
+    height: 10rem;
+    align-items: center;
+    justify-content: center;
+  }
+}
